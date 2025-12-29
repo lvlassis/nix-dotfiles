@@ -1,5 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, system, ... }:
 
+let
+  zen-wrapper = import ../../misc/wrappers/zen.nix { inherit pkgs inputs system; };
+in
 {
   home.packages = with pkgs; [
     blender
@@ -27,6 +30,7 @@
     rustc
     cargo
     # foliate
+    zen-wrapper
   ];
   nixpkgs.config.allowUnfree = true;
 }

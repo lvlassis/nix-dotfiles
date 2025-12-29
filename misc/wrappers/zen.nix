@@ -1,4 +1,4 @@
-{ pkgs, inputs, system, ... }:
+{ pkgs, inputs, system }:
 
 # Wrapper para o Zen Browser que sempre usa o perfil "default"
 pkgs.writeShellScriptBin "zen" ''
