@@ -35,9 +35,9 @@
         color = "rgba(1a1a1aee)";
       };
 
-      layerrule = [
-        "blur,waybar"
-      ];
+      # layerrule = [
+      #   "blur,waybar"
+      # ];
     };
 
     animations = {

@@ -4,7 +4,7 @@
   programs.kitty = {
     enable = true;
     font.name = "VictorMono Nerd Font";
-    themeFile = "Monokai_Pro";
+    # themeFile = "Gruvbox_Dark";
     settings = {
       background = "#0d0f18";
       background_opacity = "0.75";

@@ -2,7 +2,7 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
       ./arduino.nix
       ./devices.nix
       ./display_manager.nix
@@ -41,7 +41,8 @@
   };
 
   # Set your time zone.
-  time.timeZone = "America/Sao_Paulo";
+  # time.timeZone = "America/Sao_Paulo";
+  time.timeZone = "Europe/Lisbon";
   i18n = {
     defaultLocale = "pt_BR.UTF-8";
     extraLocaleSettings = {

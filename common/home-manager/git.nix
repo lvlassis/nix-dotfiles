@@ -3,7 +3,11 @@
 {
   programs.git = {
     enable = true;
-    userName = "Lucas Vinícius";
-    userEmail = "lvlassis.2@gmail.com";
+    settings = {
+      user = {
+        name = "Lucas Vinícius";
+        email = "lvlassis.2@gmail.com";
+      };
+    };
   };
 }

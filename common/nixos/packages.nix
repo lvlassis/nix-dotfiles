@@ -35,9 +35,9 @@
       tree-sitter
       pandoc
       firefox
-      inputs.zen-browser.packages."${system}".default
+      # inputs.zen-browser.packages."${system}".default  # Movido para Home Manager com wrapper
       undollar
-      nodePackages.live-server
+      # nodePackages.live-server # error: 'live-server' has been removed because it was unmaintained upstream
       postman
       wiki-tui
       direnv
@@ -72,7 +72,7 @@
       bluez-tools
       # ani-cli
       htop-vim
-      xdragon
+      dragon-drop
       gnumake
       kanshi
       ranger  # Just because of rifle
