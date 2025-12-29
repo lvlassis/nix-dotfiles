@@ -57,7 +57,7 @@
     extraSpecialArgs = { inherit system inputs outputs; nixpkgs-unstable = nixpkgs-unstable.legacyPackages.${system};};  # <- passing inputs to the attribute set for home-manager
     specialArgs = { inherit system inputs outputs; nixpkgs-unstable = nixpkgs-unstable.legacyPackages.${system};};  # <- passing inputs to the attribute set for configuration
 
-    auxiliar = import ./misc/auxiliar { inherit nixpkgs home-manager specialArgs extraSpecialArgs; };
+    auxiliar = import ./misc/auxiliar { inherit nixpkgs home-manager specialArgs extraSpecialArgs; caelestia-shell = inputs.caelestia-shell; };
     nixosConfigurations = auxiliar.nixosConfigurations;
     homeConfigurations = auxiliar.homeConfigurations;
 
