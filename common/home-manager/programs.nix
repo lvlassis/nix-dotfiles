@@ -8,9 +8,5 @@
         plugins = [pkgs.rofi-emoji];
       };
       
-      caelestia = {
-        enable = true;
-        # theme = "catppuccin-mocha";
-      };
   };
 }
