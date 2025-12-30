@@ -12,5 +12,11 @@
       # Abrir firewall
       openDefaultPorts = true;
     };
+
+    upower = {
+      enable = true;
+      percentageLow = 20;
+      percentageCritical = 5;
+    }
   };
 }
