@@ -19,6 +19,7 @@
         "terminal"
         "shell"
         # "packages" # Comentado pois é lento (enumera 7000+ pacotes)
+        "battery"
         "memory"
         "disk"
         "uptime"

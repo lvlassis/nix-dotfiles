@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  import = [
+  imports = [
     ./settings.nix
   ];
 

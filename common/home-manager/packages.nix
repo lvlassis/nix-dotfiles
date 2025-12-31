@@ -5,6 +5,7 @@ let
 in
 {
   home.packages = with pkgs; [
+    qbittorrent
     blender
     bambu-studio
     openCalendar

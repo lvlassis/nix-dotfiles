@@ -15,7 +15,6 @@
     ./env_vars.nix
     ./input.nix
     ./plugins.nix
-    ./window_rules.nix
   ];
 
 

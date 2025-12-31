@@ -62,7 +62,6 @@
       lua-language-server
       luarocks
       pkgs.wl-clipboard
-      swaynotificationcenter
       pkgs.wlogout
       grim
       slurp

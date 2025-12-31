@@ -66,16 +66,16 @@
         "quickshell": "quickshell"
       },
       "locked": {
-        "lastModified": 1766885627,
-        "narHash": "sha256-Ux+D5mjfLEMQfCaG9g4TGKgBsQ/oVjo1613/m7Uk/5Y=",
-        "owner": "caelestia-dots",
-        "repo": "shell",
-        "rev": "dfa28d7f85215bd42d02717255c45b8126aeb8da",
+        "lastModified": 1767202490,
+        "narHash": "sha256-fB9XmP1VX3yo/xNOg/4wDax+vNvSuq6YLEmhEPntixE=",
+        "owner": "Sevenings",
+        "repo": "my-caelestia-shell",
+        "rev": "19c231212242d4e7f4fc966bda80dbe1c967b005",
         "type": "github"
       },
       "original": {
-        "owner": "caelestia-dots",
-        "repo": "shell",
+        "owner": "Sevenings",
+        "repo": "my-caelestia-shell",
         "type": "github"
       }
     },
