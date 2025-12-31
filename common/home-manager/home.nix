@@ -3,6 +3,7 @@
 {
 
   imports = [
+    ./caelestia
     ./clipcat.nix
     ./hyprland/hyprland.nix
     ./environment_variables.nix

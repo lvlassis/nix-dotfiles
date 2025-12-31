@@ -1,18 +1,16 @@
 { ... }:
 
 {
+  import = [
+    ./settings.nix
+  ];
+
   programs.caelestia = {
     enable = true;
     systemd = {
       enable = true;
       target = "graphical-session.target";
       environment = [];
-    };
-    settings = {
-      bar.status = {
-        showBattery = true;
-      };
-      paths.wallpaperDir = "~/Imagens/Wallpapers";
     };
     cli = {
       enable = true; # Also add caelestia-cli to path
