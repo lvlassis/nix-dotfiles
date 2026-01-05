@@ -13,7 +13,7 @@ in
     # BluetoothManager
     (pkgs.writeShellApplication {
       name = "bluetoothManager";
-      runtimeInputs = [ pkgs.rofi-wayland pkgs.bluez pkgs.gawk coreutils gnugrep ];
+      runtimeInputs = [ pkgs.rofi pkgs.bluez pkgs.gawk coreutils gnugrep ];
       text = builtins.readFile ./bluetoothManager.sh;
     })
 
