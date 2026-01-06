@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modo-tablet.nix
       ./packages.nix
       ./programs.nix
       ./services.nix
@@ -27,14 +28,12 @@
     ];
   };
 
+  # Mouse bolinha
   # Habilitar suporte para dispositivos Logitech
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true; # Interface gráfica do Solaar
 
   users.defaultUserShell = pkgs.zsh;
-
-  # Sddm
-  services.displayManager.sddm.wayland.enable = true;
 
 
   # This option defines the first version of NixOS you have installed on this particular machine,
