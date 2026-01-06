@@ -27,7 +27,7 @@
       vimKeybinds = true;
       commands = {
         logout = ["loginctl" "terminate-user" ""];
-        shutdown = ["sysmtemctl" "poweroff"];
+        shutdown = ["systemctl" "poweroff"];
         hibernate = ["systemctl" "suspend"];
         reboot = ["systemctl" "reboot"];
       };
