@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  wayland.windowManager.hyprland.settings.windowrulev2 = [
-    "float, size 518 291, pin, move 1386 772, initialTitle:(Picture-in-Picture)"
+  wayland.windowManager.hyprland.settings.windowrule = [
+    "match:initial_title Picture-in-Picture, float on, size 518 291, pin on, move 1386 772"
   ];
 }
