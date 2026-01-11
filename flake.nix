@@ -21,7 +21,7 @@
     };
 
     # Hyprland 
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland/v0.53.0";
 
     # Hyprland  Dynamic Cursors
     hypr-dynamic-cursors = {
@@ -31,7 +31,7 @@
 
     # Hyprland Plugins
     hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
+      url = "github:hyprwm/hyprland-plugins/v0.53.0";
       inputs.hyprland.follows = "hyprland";
     };
 

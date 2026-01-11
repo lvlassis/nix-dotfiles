@@ -90,7 +90,7 @@
       # "bordercolor rgb(a9dc76), class:(floatingTerminal),title:(python3)"
       "match:class obsidian, border_color rgb(AB9DF2)"
 
-      "match:title *WhatsApp*, border_color rgb(144D37)"
+      "match:title .*WhatsApp.*, border_color rgb(144D37)"
 
       # pulsemixer
       "match:title pulsemixer, float on"
