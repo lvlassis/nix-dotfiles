@@ -5,6 +5,7 @@
   imports = [
     ./caelestia
     ./clipcat.nix
+    ./colors
     ./hyprland/hyprland.nix
     ./environment_variables.nix
     ./fastfetch.nix
