@@ -5,6 +5,7 @@ let
 in
 {
   home.packages = with pkgs; [
+    tinty
     qbittorrent
     blender
     bambu-studio

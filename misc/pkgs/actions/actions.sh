@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 config_file="$HOME/.config/rofi/itemSelectorConfig.rasi"
 
@@ -7,6 +7,10 @@ options=(
     "Home Switch"
     "NixOS Rebuild"
     "Nix Collect Garbage" 
+    "Install Package Home"
+    "Install Package Rebuild"
+    "Install Package Home User"
+    "Install Package Rebuild User"
 )
 
 abrir() {
@@ -27,6 +31,18 @@ case $selected in
 
     "Nix Collect Garbage")
         abrir "Nix Garbage Collect" nix-gc ;;
+
+    "Install Package Home")
+        abrir "Install Package Home" bash -c 'cd ~/.dotfiles/common/home-manager/ && nvim packages.nix';;
+
+    "Install Package Rebuild")
+        abrir "Install Package Rebuild" bash -c 'cd ~/.dotfiles/common/nixos/ && nvim packages.nix';;
+
+    "Install Package Home User")
+        abrir "Install Package Home User" bash -c "cd ~/.dotfiles/$(whoami)/home-manager/ && nvim packages.nix";;
+
+    "Install Package Rebuild User")
+        abrir "Install Package Rebuild User" bash -c "cd ~/.dotfiles/$(whoami)/nixos/ && nvim packages.nix";;
 
     *)
         exit 0 ;;
