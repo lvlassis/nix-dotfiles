@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./caelestia
     ./hyprland/hyprland.nix
     ./hyprpaper.nix
     ./hypridle.nix
