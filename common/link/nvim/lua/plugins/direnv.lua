@@ -1,6 +1,10 @@
 return {
   "NotAShelf/direnv.nvim",
   config = function()
-    require("direnv").setup({})
+    require("direnv").setup({
+      statusline = {
+        enabled = true
+      }
+    })
   end,
 }
