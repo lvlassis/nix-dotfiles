@@ -41,8 +41,7 @@
   };
 
   # Set your time zone.
-  # time.timeZone = "America/Sao_Paulo";
-  time.timeZone = "Europe/Lisbon";
+  time.timeZone = "America/Sao_Paulo";
   i18n = {
     defaultLocale = "pt_BR.UTF-8";
     extraLocaleSettings = {

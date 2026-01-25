@@ -6,9 +6,12 @@
   inputs = {
     # Caelestia Shell
     caelestia-shell = {
-      url = "github:caelestia-dots/shell";
+      url = "github:Sevenings/my-caelestia-shell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Nix-Colors
+    nix-colors.url = "github:misterio77/nix-colors";
 
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
@@ -21,7 +24,7 @@
     };
 
     # Hyprland 
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "github:hyprwm/Hyprland/v0.53.0";
 
     # Hyprland  Dynamic Cursors
     hypr-dynamic-cursors = {
@@ -31,7 +34,7 @@
 
     # Hyprland Plugins
     hyprland-plugins = {
-      url = "github:hyprwm/hyprland-plugins";
+      url = "github:hyprwm/hyprland-plugins/v0.53.0";
       inputs.hyprland.follows = "hyprland";
     };
 
@@ -57,7 +60,7 @@
     extraSpecialArgs = { inherit system inputs outputs; nixpkgs-unstable = nixpkgs-unstable.legacyPackages.${system};};  # <- passing inputs to the attribute set for home-manager
     specialArgs = { inherit system inputs outputs; nixpkgs-unstable = nixpkgs-unstable.legacyPackages.${system};};  # <- passing inputs to the attribute set for configuration
 
-    auxiliar = import ./misc/auxiliar { inherit nixpkgs home-manager specialArgs extraSpecialArgs; };
+    auxiliar = import ./misc/auxiliar { inherit nixpkgs home-manager specialArgs extraSpecialArgs; caelestia-shell = inputs.caelestia-shell; };
     nixosConfigurations = auxiliar.nixosConfigurations;
     homeConfigurations = auxiliar.homeConfigurations;
 

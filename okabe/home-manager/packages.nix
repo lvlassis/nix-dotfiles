@@ -1,7 +1,6 @@
 { pkgs, outputs, inputs, system, ... }:
 {
   home.packages = with pkgs; [
-    # inputs.caelestia-shell.packages.${system}.with-cli  # Temporariamente comentado devido ao erro xkeyboard-config
     unstable.quickshell
     foliate
     openfortivpn

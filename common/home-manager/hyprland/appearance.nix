@@ -9,9 +9,6 @@
       gaps_out = 12;
       border_size = 3;
 
-      "col.active_border" = "rgb(a9dc76)";
-      "col.inactive_border" = "rgb(2d2a2e)";
-
       layout = "dwindle";
 
       allow_tearing = false;
@@ -86,11 +83,41 @@
       };
     };
 
-    windowrulev2 = [
-      "bordercolor rgb(a9dc76),class:(floatingTerminal),title:(python3)"
-      "bordercolor rgb(ffd866),class:(floatingTerminal),title:(calcurse)"
-      "bordercolor rgb(AB9DF2),class:(obsidian)"
-      "bordercolor rgb(144D37),title:(.*WhatsApp.*)"
+    windowrule = [
+      # "bordercolor rgb(a9dc76), class:(floatingTerminal),title:(python3)"
+      "match:class obsidian, border_color rgb(AB9DF2)"
+
+      "match:title .*WhatsApp.*, border_color rgb(144D37)"
+
+      # pulsemixer
+      "match:title pulsemixer, float on"
+
+      # nmtui
+      "match:title nmtui, float on"
+
+      # MiniTerminal
+      "match:class miniTerminal, float on, workspace special:magic"
+
+      # Floating Terminal
+      "match:class floatingTerminal, float on"
+
+      # Dictionary
+      "match:class org.gnome.Dictionary, float on, size 400 300, move 1515 390"
+
+      # Calcurse
+      "match:class floatingTerminal, match:title calcurse, border_color rgb(ffd866), size 1000 640"
+
+      # Wlogout
+      "match:class wlogout, no_anim on, fullscreen on"
+
+      # KDE Password Agent
+      "match:class org.kde.polkit-kde-authentication-agent-1, float on"
+   
+      # Pygame window
+      "match:title pygame window, float on"
+
+      # Spotify Workspace
+      "match:class Spotify, workspace $spotify_workspace"
     ];
   };
 }

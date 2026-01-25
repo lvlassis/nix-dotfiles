@@ -1,9 +1,10 @@
-{ 
-  nixpkgs, 
+{
+  nixpkgs,
   home-manager,
   specialArgs,
   extraSpecialArgs,
   system ? "x86_64-linux",
+  caelestia-shell,
 }:
 {
   nixosConfigurations = {user, extraModules ? [] }@args: (nixpkgs.lib.nixosSystem {
@@ -19,6 +20,7 @@
       inherit extraSpecialArgs;
       modules = [
         # > Our main home-manager configuration file <
+        caelestia-shell.homeManagerModules.default
         ../../common/home-manager/home.nix
         ../../${user}/home-manager/home.nix
       ] ++ extraModules;

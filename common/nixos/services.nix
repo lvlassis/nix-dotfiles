@@ -3,6 +3,8 @@
 {
   services = {
 
+    qbittorrent.enable = true;
+
     clipcat.enable = true;
 
     pipewire = {

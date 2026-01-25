@@ -8,7 +8,7 @@ in
   xdg.mimeApps.defaultApplications = {
     "text/plain" = [ "neovide.desktop" ];
     "text/html" = browser;
-    "application/pdf" = [ "zathura.desktop" ];
+    "application/pdf" = [ "org.pwmt.zathura.desktop" ];
     "image/*" = [ "eog.desktop" ];
     "video/*" = [ "mpv.desktop" ];
     "x-scheme-handler/mailto" = browser;

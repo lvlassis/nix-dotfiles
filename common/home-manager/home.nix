@@ -1,9 +1,10 @@
-{ outputs, ... }:
+{ outputs, inputs, ... }:
 
 {
-
   imports = [
+    ./caelestia
     ./clipcat.nix
+    ./colors
     ./hyprland/hyprland.nix
     ./environment_variables.nix
     ./fastfetch.nix
@@ -22,6 +23,7 @@
     ./yazi/yazi.nix
     ./zathura.nix
     ./zsh/zsh.nix
+    inputs.nix-colors.homeManagerModules.default
   ];
 
   manual.html.enable = true;

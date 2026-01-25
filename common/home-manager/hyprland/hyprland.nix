@@ -6,6 +6,7 @@
   wayland.windowManager.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.system}.hyprland;
+    systemd.enable = false;
   };
 
   imports = [
@@ -15,7 +16,6 @@
     ./env_vars.nix
     ./input.nix
     ./plugins.nix
-    ./window_rules.nix
   ];
 
 
