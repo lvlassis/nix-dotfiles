@@ -3,7 +3,10 @@
 {
   services = {
 
-    qbittorrent.enable = true;
+    qbittorrent = {
+      enable = true;
+      webuiPort = null;
+    };
 
     clipcat.enable = true;
 
