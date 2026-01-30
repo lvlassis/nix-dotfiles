@@ -1,0 +1,3 @@
+[submodule "common/link/nvim"]
+	path = common/link/nvim
+	url = https://github.com/lvlassis/neovim-dotfiles.git
