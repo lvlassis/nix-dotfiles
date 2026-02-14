@@ -1,17 +1,19 @@
 # This file defines overlays
-{inputs, ...}: {
+{inputs, ...}: let
+  # Automatically import all .nix files in this directory (except default.nix)
+  overlayFiles =
+    builtins.filter
+    (name: name != "default.nix" && builtins.match ".*\\.nix" name != null)
+    (builtins.attrNames (builtins.readDir ./.));
+in {
   # This one brings our custom packages from the 'pkgs' directory
   additions = final: _prev: import ../pkgs final.pkgs;
 
   # This one contains whatever you want to overlay
   # You can change versions, add patches, set compilation flags, anything really.
   # https://nixos.wiki/wiki/Overlays
-  modifications = final: prev: 
-    (import ./bambu_studio.nix final prev) // {
-    # example = prev.example.overrideAttrs (oldAttrs: rec {
-    # ...
-    # });
-  };
+  modifications = final: prev:
+    prev.lib.mergeAttrsList (map (file: import (./. + "/${file}") final prev) overlayFiles);
 
   # When applied, the unstable nixpkgs set (declared in the flake inputs) will
   # be accessible through 'pkgs.unstable'

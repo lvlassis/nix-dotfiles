@@ -44,6 +44,11 @@
     DefaultTimeoutAbortSec = 10;
   };
 
+  boot.kernelParams = [
+    # "nvidia-drm.fbdev=0"
+    "nvidia-drm.modeset=1"
+  ];
+
   # This option defines the first version of NixOS you have installed on this particular machine,
   # and is used to maintain compatibility with application data (e.g. databases) created on older NixOS versions.
   #
