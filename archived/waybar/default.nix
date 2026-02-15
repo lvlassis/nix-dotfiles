@@ -1,7 +1,9 @@
 { ... }:
 
-
 {
+  home.packages = with pkgs; [
+    reload-wallpaper
+  ];
   programs.waybar = {
     enable = false;
     style = ./css/monokai.css;

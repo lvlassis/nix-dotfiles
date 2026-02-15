@@ -6,4 +6,6 @@
     jmtpfs
     gvfs
   ];
+
+  services.udev.packages = [ pkgs.libmtp ];
 }

@@ -10,7 +10,6 @@
       settings = {};
     };
 
-    zsh.enable = true;
 
     obs-studio = {
       enable = true;

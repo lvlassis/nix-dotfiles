@@ -2,14 +2,6 @@
 
 {
   services = {
-
-    qbittorrent = {
-      enable = true;
-      webuiPort = null;
-    };
-
-    clipcat.enable = true;
-
     pipewire = {
       enable = true;
       alsa.enable = true;
@@ -17,12 +9,5 @@
       pulse.enable = true;
       wireplumber.enable = true;
     };
-
-    udisks2.enable = true;
-
-    dbus.enable = true;
-
-    udev.packages = [ pkgs.libmtp ];
-
   };
 }
