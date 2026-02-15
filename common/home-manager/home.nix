@@ -5,7 +5,7 @@
     ./caelestia
     ./clipcat.nix
     ./colors
-    ./hyprland/hyprland.nix
+    ./hyprland
     ./environment_variables.nix
     ./fastfetch.nix
     ./git.nix

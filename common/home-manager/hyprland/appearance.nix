@@ -7,7 +7,7 @@
     general = {
       gaps_in = 8;
       gaps_out = 12;
-      border_size = 3;
+      border_size = 2;
 
       layout = "dwindle";
 
@@ -16,7 +16,7 @@
     };
 
     decoration = {
-      rounding = 2;
+      rounding = 6;
 
       blur = {
         enabled = true;
@@ -27,9 +27,10 @@
 
       shadow = {
         enabled = true;
-        range = 4;
-        render_power = 3;
-        color = "rgba(1a1a1aee)";
+        range = 36;
+        render_power = 4;
+        color = "rgba($backgroundd0)";
+        offset = "6, 8";
       };
 
       # layerrule = [
@@ -62,8 +63,8 @@
     plugin = {
       hyprbars = {
         bar_height = 18;
-        bar_color = "rgb(221f22)";
-        "col.text" = "rgb(fcfcfa)";
+        bar_color = "rgb($base)";
+        "col.text" = "rgb($text)";
         bar_text_size = 12;
         bar_text_font = "Cantarell Bold";
         bar_title_enabled = true;

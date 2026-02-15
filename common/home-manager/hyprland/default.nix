@@ -19,6 +19,10 @@
   ];
 
 
+  wayland.windowManager.hyprland.extraConfig = ''
+    source = ~/.config/hypr/dev.conf
+  '';
+
   wayland.windowManager.hyprland.settings = {
 
     # Some Applications var utils

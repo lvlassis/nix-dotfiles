@@ -3,10 +3,13 @@
 {
   wayland.windowManager.hyprland = {
     settings = {
-      general = with config.colorScheme.palette; {
-        "col.active_border" = "rgb(${base0D})";
-        "col.inactive_border" = "rgb(${base03})";
+      source = ["~/.config/hypr/scheme/current.conf"];
+
+      general = {
+        "col.active_border" = "rgb($overlay2)";
+        "col.inactive_border" = "rgba($cruste0)";
       };
+
     };
   };
 }
