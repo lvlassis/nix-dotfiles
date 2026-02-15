@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    switchlayout
-    workspace
+    gimp
+    inkscape
   ];
 }

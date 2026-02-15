@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    switchlayout
-    workspace
+    reload_waybar
   ];
 }

@@ -4,6 +4,18 @@ let
   browser = "userapp-Zen-HINHD3.desktop";
 in
 {
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-termfilechooser
+        xdg-desktop-portal-gtk
+      ];
+      config.common = {
+        "org.freedesktop.impl.portal.FileChooser" = "termfilechooser";
+      };
+    };
+  };
   xdg.mimeApps.enable = true;
   xdg.mimeApps.defaultApplications = {
     "text/plain" = [ "neovide.desktop" ];
@@ -18,3 +30,4 @@ in
     "x-scheme-handler/unknown" = browser;
   };
 }
+

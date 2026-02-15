@@ -1,6 +1,11 @@
 { inputs, pkgs, system, ... }:
 
 {
+  home.packages = with pkgs; [
+    trash-cli
+    fzf
+  ]
+
   programs.yazi = {
     enable = true;
     package = inputs.yazi.packages.${pkgs.system}.default;

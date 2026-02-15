@@ -1,7 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    switchlayout
-    workspace
+    bambu-studio
+    blender
+    freecad-wayland
   ];
 }

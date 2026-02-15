@@ -1,6 +1,13 @@
 { config, pkgs, ... }:
 
 {
+  userSettings = {
+    kitty = {
+      enable = true;
+      font_size = 11;
+    };
+  };
+
   imports = [
     ./caelestia
     ./hyprland/hyprland.nix
@@ -8,9 +15,10 @@
     ./hypridle.nix
     ./packages.nix
     ./swaylock.nix
-    ./kitty.nix
     ./waybar/waybar.nix
     ./legacy/legacy.nix
+
+    ../../modules/user/kitty
   ];
 
 
