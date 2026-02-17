@@ -11,6 +11,7 @@
     ./git.nix
     ./gtk.nix
     ./kitty.nix
+    ./matrix
     ./mimetypes.nix
     ./mpd.nix
     ./nvim.nix
