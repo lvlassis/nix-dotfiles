@@ -4,5 +4,5 @@
     iamb
   ];
 
-  home.file.".config/iamb/config.toml".source = ./config.toml
+  home.file.".config/iamb/config.toml".source = ./config.toml;
 }
