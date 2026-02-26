@@ -4,6 +4,7 @@
   imports = [
     ./caelestia
     ./clipcat.nix
+    ./cruise
     ./colors
     ./hyprland
     ./environment_variables.nix
