@@ -1,7 +1,7 @@
 { pkgs, ... }:
 { 
   home.packages = with pkgs; [
-    kubectl
-    kubernetes-helm
+    kubernetes
+    minikube
   ];
 }

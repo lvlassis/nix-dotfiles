@@ -6,8 +6,6 @@ in
 {
   home.packages = with pkgs; [
     keepassxc
-    kubernetes
-    minikube
     tinty
     qbittorrent
     blender

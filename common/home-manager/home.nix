@@ -13,6 +13,7 @@
     ./gtk.nix
     ./kitty.nix
     ./kubernetes-utils
+    ./kubernetes-local-cluster
     ./matrix
     ./mimetypes.nix
     ./mpd.nix
