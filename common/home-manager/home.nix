@@ -12,6 +12,7 @@
     ./git.nix
     ./gtk.nix
     ./kitty.nix
+    ./kubernetes-utils
     ./matrix
     ./mimetypes.nix
     ./mpd.nix
