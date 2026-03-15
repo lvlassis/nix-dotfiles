@@ -1,8 +1,12 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   imports = [
     ./settings.nix
+  ];
+
+  home.packages = with pkgs; [
+    quickshell
   ];
 
   programs.caelestia = {
