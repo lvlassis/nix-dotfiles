@@ -6,6 +6,7 @@
     ./clipcat.nix
     ./colors
     ./hyprland
+    ./elixir
     ./environment_variables.nix
     ./fastfetch.nix
     ./git.nix
