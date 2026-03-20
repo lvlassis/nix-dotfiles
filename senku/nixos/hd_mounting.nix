@@ -15,12 +15,11 @@
     device = "/dev/disk/by-uuid/5E4676054675DDE9";
     fsType = "ntfs-3g"; # Altere se for outro tipo (ex: btrfs, xfs etc.)
     options = [
+      "rw"                  # Leitura e escrita
       "uid=1000"            # UID do seu usuário
       "gid=100"             # GID do seu grupo principal
-      "dmask=027"           # Permissões p/ diretórios
-      "fmask=137"           # Permissões p/ arquivos
+      "permissions"         # Permite chmod e execução de arquivos
       "windows_names"       # Impede caracteres inválidos no Windows
-      "defaults"
     ];
   };
 
@@ -60,6 +59,12 @@
     device = "/media/hd/Videos";
     fsType = "none";
     options = [ "bind" ];
+  };
+
+  fileSystems."/home/senku/Jogos/Steam" = {
+    device = "/media/hd/SteamNixOS";
+    fsType = "none";
+    options = [ "bind" "x-systemd.mkdir" ];
   };
 
 }
