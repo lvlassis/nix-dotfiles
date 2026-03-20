@@ -4,6 +4,7 @@
   imports = [
     ./caelestia
     ./clipcat.nix
+    ./cruise
     ./colors
     ./hyprland
     ./elixir
@@ -12,6 +13,8 @@
     ./git.nix
     ./gtk.nix
     ./kitty.nix
+    ./kubernetes-utils
+    ./kubernetes-local-cluster
     ./matrix
     ./mimetypes.nix
     ./mpd.nix
@@ -19,6 +22,7 @@
     ./packages.nix
     ./programs.nix
     ./scripts/scripts.nix
+    ./vpntce
     ./waybar/waybar.nix
     ./wlogout/wlogout.nix
     ./xdg.nix

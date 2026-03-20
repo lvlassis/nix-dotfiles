@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     unstable.quickshell
     foliate
-    openfortivpn
     tesseract
     ocrmypdf
     # kicad
