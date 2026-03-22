@@ -12,6 +12,6 @@
   ];
 
   wayland.windowManager.hyprland.settings = {
-    "$keyboard" = "kingston-hyperx-alloy-fps-mechanical-gaming-keyboard";
+    "$keyboard" = "royuan-rt100-wired";
   };
 }
