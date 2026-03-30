@@ -41,7 +41,6 @@
       postman
       wiki-tui
       direnv
-      obsidian
       mpv
       # mosquitto
       libreoffice-qt6-fresh
