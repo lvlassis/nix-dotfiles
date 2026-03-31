@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    (python.withPackages (ps: with ps; [ 
+    (python3.withPackages (ps: with ps; [ 
       numpy 
       scipy 
       matplotlib
