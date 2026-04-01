@@ -14,7 +14,7 @@
 
     # Descobrimento automático de impressoras
     avahi = {
-      enable = true;
+      enable = false;
       nssmdns4 = true;
       openFirewall = false;
     };

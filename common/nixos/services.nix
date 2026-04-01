@@ -22,7 +22,12 @@
 
     dbus.enable = true;
 
-    udev.packages = [ pkgs.libmtp ];
+    udev = {
+      packages = [ pkgs.libmtp ];
+      extraRules = ''
+        KERNEL=="uinput", MODE="0660", GROUP="input", OPTIONS+="static_node=uinput"
+      '';
+    };
 
   };
 }
