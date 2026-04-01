@@ -87,6 +87,10 @@
     windowrule = [
       # "bordercolor rgb(a9dc76), class:(floatingTerminal),title:(python3)"
       "match:class obsidian, border_color rgb(AB9DF2)"
+      "match:class obsidian, workspace special:obsidian"
+      "match:class obsidian, float on"
+      "match:class obsidian, center on"
+      "match:class obsidian, size 1421 916"
 
       "match:title .*WhatsApp.*, border_color rgb(144D37)"
 
