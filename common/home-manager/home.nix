@@ -23,7 +23,7 @@
     ./packages.nix
     ./programs.nix
     ./scripts/scripts.nix
-    ./vpntce
+    ./tce
     ./waybar/waybar.nix
     ./wlogout/wlogout.nix
     ./xdg.nix

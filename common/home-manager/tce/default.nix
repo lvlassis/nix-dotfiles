@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     openfortivpn
+    glab
   ];
 
   programs.zsh.shellAliases = {
